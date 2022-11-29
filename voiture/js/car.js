@@ -58,9 +58,10 @@ function animate() {
     /*cube.position.x - (0.5/0.2);
     cube.position.z - (0.5/0.2);*/
     cube.rotation.y = angle;
+    camera.rotation.y = angle;
     camera.position.x = cube.position.x;
     camera.position.y = cube.position.y + 0.5;
-    camera.position.z = cube.position.z + 1;
+    camera.position.z = cube.position.z + 1.25;
     renderer.render(scene, camera);
 };
 
