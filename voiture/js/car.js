@@ -17,8 +17,8 @@ scene.add(cube1);
 
 let vitesse = 0;
 let max_vitesse = 3;
-let friction = 0.001;
-let acceleration = 0.1;
+let friction = 0.005;
+let acceleration = 0.3;
 let angle = 0;
 
 document.addEventListener('keydown', function(event) {
