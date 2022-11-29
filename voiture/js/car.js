@@ -16,9 +16,9 @@ let cube1 = new THREE.Mesh(geometry1, material1);
 scene.add(cube1);
 
 let vitesse = 0;
-let max_vitesse = 1;
-let friction = 0.0005;
-let acceleration = 0.02;
+let max_vitesse = 3;
+let friction = 0.001;
+let acceleration = 0.1;
 let angle = 0;
 
 document.addEventListener('keydown', function(event) {
@@ -44,10 +44,10 @@ document.addEventListener('keydown', function(event) {
         vitesse = 0;
     }
     if(event.keyCode == 39) {
-        angle -= 0.03; 
+        angle -= 0.07; 
     }
     if(event.keyCode == 37) {
-        angle += 0.03;
+        angle += 0.07;
     }
     cube.position.x -= Math.sin(angle) * vitesse;
     cube.position.z -= Math.cos(angle) * vitesse;
