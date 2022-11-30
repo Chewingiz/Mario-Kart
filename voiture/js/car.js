@@ -1,4 +1,5 @@
 let scene = new THREE.Scene();
+scene.background = new THREE.Color(0xdddddd);
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -17,8 +18,8 @@ scene.add(cube1);
 
 let vitesse = 0;
 let max_vitesse = 3;
-let friction = 0.005;
-let acceleration = 0.3;
+let friction = 0.007;
+let acceleration = 0.2;
 let angle = 0;
 
 document.addEventListener('keydown', function(event) {
@@ -58,7 +59,7 @@ function animate() {
     /*cube.position.x - (0.5/0.2);
     cube.position.z - (0.5/0.2);*/
     cube.rotation.y = angle;
-    camera.rotation.y = angle;
+    //camera.rotation.y = angle;
     camera.position.x = cube.position.x;
     camera.position.y = cube.position.y + 0.5;
     camera.position.z = cube.position.z + 1.25;
