@@ -16,7 +16,7 @@ let material1 = new THREE.MeshBasicMaterial({color : 0x00ffff});
 let cube1 = new THREE.Mesh(geometry1, material1);
 scene.add(cube1);
 
-let vitesse = 0;
+/*let vitesse = 0;
 let max_vitesse = 3;
 let friction = 0.007;
 let acceleration = 0.2;
@@ -52,14 +52,40 @@ document.addEventListener('keydown', function(event) {
     }
     cube.position.x -= Math.sin(angle) * vitesse;
     cube.position.z -= Math.cos(angle) * vitesse;
-})
+})*/
+
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+
+
+function update()
+{
+	var delta = clock.getDelta(); // seconds.
+	var moveDistance = 12 * delta; // 200 pixels per second
+	var rotateAngle = Math.PI / 2 * delta;   // pi/2 radians (90 degrees) per second
+	
+	if ( keyboard.pressed("A") )
+		cube.rotation.y += rotateAngle;
+	if ( keyboard.pressed("D") )
+		cube.rotation.y -= rotateAngle;
+			
+	if ( keyboard.pressed("left") )
+		cube.position.x -= moveDistance;
+	if ( keyboard.pressed("right") )
+		cube.position.x += moveDistance;
+	if ( keyboard.pressed("up") )
+		cube.position.z -= moveDistance;
+	if ( keyboard.pressed("down") )
+		cube.position.z += moveDistance;
+}
 
 function animate() {
     requestAnimationFrame(animate);
     /*cube.position.x - (0.5/0.2);
     cube.position.z - (0.5/0.2);*/
-    cube.rotation.y = angle;
+    //cube.rotation.y = angle;
     //camera.rotation.y = angle;
+    update();
     camera.position.x = cube.position.x;
     camera.position.y = cube.position.y + 0.5;
     camera.position.z = cube.position.z + 1.25;
