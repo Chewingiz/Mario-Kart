@@ -4,15 +4,15 @@ Ce projet est une implémentation en 3D pour le web d'un jeu de course de voitur
  
 ## Parties implémentées :
 
-    - Intégration d'un modèle 3D externe.
-    - Implémentation de la génération aléatoire de routes en 3D.
-    - Gestion des collisions.
-    - Gestion de l'accélération et de l'inertie du véhicule.
-    - Ajout de musique.
+- Intégration d'un modèle 3D externe.
+- Implémentation de la génération aléatoire de routes en 3D.
+- Gestion des collisions.
+- Gestion de l'accélération et de l'inertie du véhicule.
+- Ajout de musique.
 ## Parties à améliorer 
-    - Calibration des valeurs pour l'accélération et l'inertie afin d'améliorer la jouabilité.
-    - Ajout d'un système de game over lorsqu'on tombe de la route.
-    - Implémentation de portails pour valider les passages à des endroits spécifiques.
+- Calibration des valeurs pour l'accélération et l'inertie afin d'améliorer la jouabilité.
+- Ajout d'un système de game over lorsqu'on tombe de la route.
+- Implémentation de portails pour valider les passages à des endroits spécifiques.
  
  ## Comment lancer la page web avec un serveur Python?
 
@@ -31,21 +31,19 @@ python -m http.server 8080
 Une fois le serveur lancé, vous pouvez accéder à la page web en ouvrant votre navigateur et en saisissant l'adresse suivante dans la barre d'adresse :
 
 ```
-
 http://localhost:8000
 ```
 Cela va ouvrir une page web dans le navigateur, et le JavaScript contenu dans les fichiers sera exécuté.
 
 ##  Méthode de création aléatoire de routes en 3D
 J'ai créé une méthode de génération aléatoire de routes en utilisant la trigonométrie et les courbes de Bézier, qui permet de créer facilement des routes dynamiques à chaque rafraîchissement.
-
-   - Imaginer un cercle avec un centre en (0,0) et dessiner plusieurs lignes imaginaires partant du centre avec des angles différents.
-   - Choisir une taille aléatoire qui part du centre vers le bord du cercle et calculer les coordonnées du point (cosinus, sinus).
-   - Répéter l'étape 2 pour obtenir la forme extérieure en ajoutant la taille de la route souhaitée.
-   - Obtenir deux listes de points en 2D à partir des coordonnées des points calculées.
-   - Utiliser les listes de points pour tracer des courbes de Bézier et obtenir deux shapes.
-   - Définir une forme pleine avec la shape interne comme hole et l'extérieur comme shape.
-   - Utiliser l'outil d'extrusion proposé par THREE.js pour passer la forme de 2D à 3D et obtenir la forme finale de la route.
+- Imaginer un cercle avec un centre en (0,0) et dessiner plusieurs lignes imaginaires partant du centre avec des angles différents.
+- Choisir une taille aléatoire qui part du centre vers le bord du cercle et calculer les coordonnées du point (cosinus, sinus).
+- Répéter l'étape 2 pour obtenir la forme extérieure en ajoutant la taille de la route souhaitée.
+- Obtenir deux listes de points en 2D à partir des coordonnées des points calculées.
+- Utiliser les listes de points pour tracer des courbes de Bézier et obtenir deux shapes.
+- Définir une forme pleine avec la shape interne comme hole et l'extérieur comme shape.
+- Utiliser l'outil d'extrusion proposé par THREE.js pour passer la forme de 2D à 3D et obtenir la forme finale de la route.
 
 ## Bibliothèques utilisées 
 * [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
