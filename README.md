@@ -36,6 +36,17 @@ http://localhost:8000
 ```
 Cela va ouvrir une page web dans le navigateur, et le JavaScript contenu dans les fichiers sera exécuté.
 
+##  Méthode de création aléatoire de routes en 3D
+J'ai créé une méthode de génération aléatoire de routes en utilisant la trigonométrie et les courbes de Bézier, qui permet de créer facilement des routes dynamiques à chaque rafraîchissement.
+
+   - Imaginer un cercle avec un centre en (0,0) et dessiner plusieurs lignes imaginaires partant du centre avec des angles différents.
+   - Choisir une taille aléatoire qui part du centre vers le bord du cercle et calculer les coordonnées du point (cosinus, sinus).
+   - Répéter l'étape 2 pour obtenir la forme extérieure en ajoutant la taille de la route souhaitée.
+   - Obtenir deux listes de points en 2D à partir des coordonnées des points calculées.
+   - Utiliser les listes de points pour tracer des courbes de Bézier et obtenir deux shapes.
+   - Définir une forme pleine avec la shape interne comme hole et l'extérieur comme shape.
+   - Utiliser l'outil d'extrusion proposé par THREE.js pour passer la forme de 2D à 3D et obtenir la forme finale de la route.
+
 ## Bibliothèques utilisées 
 * [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
 ## Images
