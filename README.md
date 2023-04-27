@@ -48,3 +48,5 @@ J'ai créé une méthode de génération aléatoire de routes en utilisant la tr
 ## Bibliothèques utilisées 
 * [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
 ## Images
+## Test
+Vous pouvez essayer le jeu sur itchio: https://chewingiz.itch.io/mario-kart-js
