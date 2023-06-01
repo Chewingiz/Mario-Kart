@@ -56,4 +56,4 @@ J'ai créé une méthode de génération aléatoire de routes en utilisant la tr
 
 J'ai mis le jeu sur itch.io, si vous souhaitez le tester. Veuillez noter que pour le moment, il n'y a pas encore de fonction "Game Over", donc il sera nécessaire de rafraîchir la page pour recommencer. De plus, si vous traversez le sol, veuillez également rafraîchir la page pour générer une nouvelle carte. La musique peut prendre un certain temps pour démarrer et la première collision peut être imprévisible. Je vais essayer de l'améliorer au plus vite.
 
-Voici le lien de la page du jeu sur itch.io: ![lien de la page sur itch.io](https://chewingiz.itch.io/mario-kart-js)
+Voici le lien de la page du jeu sur itch.io: [lien de la page sur itch.io](https://chewingiz.itch.io/mario-kart-js)
