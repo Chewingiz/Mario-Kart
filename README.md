@@ -6,7 +6,7 @@ Ce projet est une implémentation en 3D pour le web d'un jeu de course de voitur
 
 - Intégration d'un modèle 3D externe.
 - Implémentation de la génération aléatoire de routes en 3D.
-- Gestion des collisions.
+- Gestion des collisions. (Je vais essayer de trouver une meilleure méthode, car celle-ci n'est pas parfaite.)
 - Gestion de l'accélération et de l'inertie du véhicule.
 - Ajout de musique.
 ## Parties à améliorer 
@@ -51,3 +51,9 @@ J'ai créé une méthode de génération aléatoire de routes en utilisant la tr
 
 
 ![video du jeu](https://im5.ezgif.com/tmp/ezgif-5-3c22222550.gif)
+
+# Tester le programme 
+
+J'ai mis le jeu sur itch.io, si vous souhaitez le tester. Veuillez noter que pour le moment, il n'y a pas encore de fonction "Game Over", donc il sera nécessaire de rafraîchir la page pour recommencer. De plus, si vous traversez le sol, veuillez également rafraîchir la page pour générer une nouvelle carte. La musique peut prendre un certain temps pour démarrer et la première collision peut être imprévisible. Je vais essayer de l'améliorer au plus vite.
+
+Voici le lien de la page du jeu sur itch.io: ![lien de la page sur itch.io](https://chewingiz.itch.io/mario-kart-js)
