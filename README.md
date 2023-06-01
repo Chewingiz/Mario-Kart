@@ -49,3 +49,5 @@ J'ai créé une méthode de génération aléatoire de routes en utilisant la tr
 * [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
 ## Images
 
+
+![video du jeu](https://im5.ezgif.com/tmp/ezgif-5-3c22222550.gif)
