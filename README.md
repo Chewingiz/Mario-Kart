@@ -2,6 +2,8 @@
 
 Ce projet est une implémentation en 3D pour le web d'un jeu de course de voitures inspiré de Mario Kart.
  
+## Bibliothèques utilisées 
+* [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
 ## Parties implémentées :
 
 - Intégration d'un modèle 3D externe.
@@ -45,8 +47,6 @@ J'ai créé une méthode de génération aléatoire de routes en utilisant la tr
 - Définir une forme pleine avec la shape interne comme hole et l'extérieur comme shape.
 - Utiliser l'outil d'extrusion proposé par THREE.js pour passer la forme de 2D à 3D et obtenir la forme finale de la route.
 
-## Bibliothèques utilisées 
-* [Three.js](https://threejs.org/) : une bibliothèque JavaScript pour créer des animations et des rendus en 3D dans le navigateur
 ## Images
 
 
